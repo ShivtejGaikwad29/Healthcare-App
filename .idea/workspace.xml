@@ -27,7 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="119472dc-a623-4e72-b01e-f291cbd732c9" name="Changes" comment="final commit">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Shivtej\.android\avd\Medium_Phone_API_29.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\hp\.android\avd\Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -86,11 +86,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "shivtej",
-    "last_opened_file_path": "D:/github(medilock)",
-    "settings.editor.selected.configurable": "database.inspector"
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/android - healthcare",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -107,9 +109,10 @@
       <recent name="com.example.bmicalculator" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.splash">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="Bmiactivitynew" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
-      <module name="BMIcalculator.app.main" />
+      <module name="BMIcalculator.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -117,13 +120,15 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -168,13 +173,14 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="com.example.bmicalculator.Bmiactivitynew" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="BMIcalculator.app.main" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -182,13 +188,15 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -233,13 +241,15 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="bmiactivity" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
-      <module name="BMIcalculator.app.main" />
+      <module name="BMIcalculator.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -247,13 +257,15 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -298,13 +310,14 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="com.example.bmicalculator.bmiactivity" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="splash" type="AndroidRunConfigurationType" factoryName="Android App" temporary="true">
-      <module name="BMIcalculator.app.main" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -312,13 +325,15 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
       <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -363,6 +378,7 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
       <option name="ACTIVITY_CLASS" value="com.example.bmicalculator.splash" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
