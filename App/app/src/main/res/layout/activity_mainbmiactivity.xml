@@ -32,8 +32,9 @@
         android:background="@drawable/malefemalnotfocus"
         android:layout_above="@+id/heightlayout"
         android:layout_marginBottom="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="170dp"
@@ -41,6 +42,7 @@
             android:layout_above="@+id/textmale"
             android:layout_centerInParent="true"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/male">
 
         </ImageView>
@@ -69,14 +71,16 @@
         android:background="@drawable/malefemalnotfocus"
         android:layout_above="@+id/heightlayout"
         android:layout_marginBottom="35dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_above="@+id/textfemale"
             android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/female"
             android:layout_centerInParent="true">
 
@@ -317,7 +321,7 @@
 
     <android.widget.Button
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:id="@+id/calculatebmi"
         android:layout_alignParentBottom="true"
         android:textSize="15sp"

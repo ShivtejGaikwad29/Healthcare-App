@@ -1,4 +1,3 @@
-
 package com.example.medilock;
 
 import android.content.Intent;
@@ -8,111 +7,92 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class bmiactivity extends AppCompatActivity {
 
-    Button recalbmi;
-    float intheight,intweight;
-    Intent intent;
-    TextView mbmidisplay,magedisplay,mweightdisplay,mheightdisplay,mbmicategory,mgender;
-    ImageView mimageview;
-    String mbmi;
-    String cateogory;
-    float intbmi;
-
-    String height;
-    String weight;
+    private Button recalculateBmiButton;
+    private float heightInCm, weightInKg, calculatedBmi;
+    private Intent intent;
+    private TextView bmiDisplay, bmiCategory, genderDisplay;
+    private ImageView bmiImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_bmiactivity);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        intent=getIntent();
-        mbmicategory = findViewById(R.id.bmicategorydispaly);
-        mimageview=findViewById(R.id.imageview);
-        mbmidisplay=findViewById(R.id.bmidisplay);
-        mgender=findViewById(R.id.genderdisplay);
+        // Initialize UI components
+        bmiCategory = findViewById(R.id.bmicategorydispaly);
+        bmiImageView = findViewById(R.id.imageview);
+        bmiDisplay = findViewById(R.id.bmidisplay);
+        genderDisplay = findViewById(R.id.genderdisplay);
+        recalculateBmiButton = findViewById(R.id.recalculatebmi);
 
+        // Retrieve data passed from previous activity
+        intent = getIntent();
+        String heightStr = intent.getStringExtra("height");
+        String weightStr = intent.getStringExtra("weight");
 
-        height=intent.getStringExtra("height");
-        weight=intent.getStringExtra("weight");
+        // Ensure proper parsing of height and weight values
+        if (heightStr != null && weightStr != null) {
+            heightInCm = Float.parseFloat(heightStr);
+            weightInKg = Float.parseFloat(weightStr);
+        } else {
+            // Handle error in case values are not passed
+            heightInCm = 0;
+            weightInKg = 0;
+        }
 
+        // Convert height from cm to meters
+        float heightInMeters = heightInCm / 100;
 
-        intheight=Float.parseFloat(height);
-        intweight=Float.parseFloat(weight);
+        // Calculate BMI
+        calculatedBmi = weightInKg / (heightInMeters * heightInMeters);
 
-        intheight=intheight/100;
-        intbmi=intweight/(intheight*intheight);
-
-
-
-
-
-
-        recalbmi=findViewById(R.id.recalculatebmi);
-        recalbmi.setOnClickListener(new View.OnClickListener() {
+        // Set up the recalculate button to navigate back
+        recalculateBmiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(bmiactivity.this,mainbmiactivity.class));
+                // Correct Intent for MainBmiActivity
+                startActivity(new Intent(bmiactivity.this, mainbmiactivity.class));
                 finish();
             }
         });
 
-        mbmi=Float.toString(intbmi);
-        System.out.println(mbmi);
+        // Display BMI value rounded to 2 decimal places
+        bmiDisplay.setText(String.format("%.2f", calculatedBmi));
 
-        if(intbmi<16)
-        {
-            mbmicategory.setText("Severe Thinness");
-            mimageview.setImageResource(R.drawable.crosss);
+        // Update BMI category and image based on calculated BMI
+        updateBmiCategoryAndImage(calculatedBmi);
 
-        }
-        else if(intbmi<16.9 && intbmi>16)
-        {
-            mbmicategory.setText("Moderate Thinness");
-            mimageview.setImageResource(R.drawable.warning);
+        // Display the gender of the user
+        genderDisplay.setText(intent.getStringExtra("gender"));
+    }
 
+    // Helper method to determine BMI category and set corresponding image
+    private void updateBmiCategoryAndImage(float bmi) {
+        if (bmi < 16) {
+            bmiCategory.setText("Severe Thinness");
+            bmiImageView.setImageResource(R.drawable.crosss);
+        } else if (bmi >= 16 && bmi < 17) {
+            bmiCategory.setText("Moderate Thinness");
+            bmiImageView.setImageResource(R.drawable.warning);
+        } else if (bmi >= 17 && bmi < 18.5) {
+            bmiCategory.setText("Mild Thinness");
+            bmiImageView.setImageResource(R.drawable.warning);
+        } else if (bmi >= 18.5 && bmi < 25) {
+            bmiCategory.setText("Normal");
+            bmiImageView.setImageResource(R.drawable.ok);
+        } else if (bmi >= 25 && bmi < 30) {
+            bmiCategory.setText("Overweight");
+            bmiImageView.setImageResource(R.drawable.warning);
+        } else if (bmi >= 30 && bmi < 35) {
+            bmiCategory.setText("Obese Class I");
+            bmiImageView.setImageResource(R.drawable.warning);
+        } else {
+            bmiCategory.setText("Obese Class II");
+            bmiImageView.setImageResource(R.drawable.crosss);
         }
-        else if(intbmi<18.4 && intbmi>17)
-        {
-            mbmicategory.setText("Mild Thinness");
-            mimageview.setImageResource(R.drawable.warning);
-        }
-        else if(intbmi<24.9 && intbmi>18.5 )
-        {
-            mbmicategory.setText("Normal");
-            mimageview.setImageResource(R.drawable.ok);
-        }
-        else if(intbmi <29.9 && intbmi>25)
-        {
-            mbmicategory.setText("Overweight");
-            mimageview.setImageResource(R.drawable.warning);
-        }
-        else if(intbmi<34.9 && intbmi>30)
-        {
-            mbmicategory.setText("Obese Class I");
-            mimageview.setImageResource(R.drawable.warning);
-        }
-        else
-        {
-            mbmicategory.setText("Obese Class II");
-            mimageview.setImageResource(R.drawable.crosss);
-            //  mimageview.setBackground(colorDrawable2);
-        }
-        mgender.setText(intent.getStringExtra("gender"));
-        mbmidisplay.setText(mbmi);
-
     }
 }

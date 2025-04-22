@@ -35,7 +35,8 @@ public class EditProfileActivity extends AppCompatActivity {
             return insets;
         });
 
-        db = new Database(getApplicationContext());
+        db = new Database(getApplicationContext(), "MediLockDB", null, 1);
+
 
         sharedPreferences = getSharedPreferences("Current user", MODE_PRIVATE);
         id = sharedPreferences.getInt("id", 1); // CHANGE TO SUITABLE DEFAULT VALUE LATER
