@@ -6,22 +6,21 @@
   <table>
     <tr>
       <td align="center">
-        <img src="images/login.png" alt="Login Screen" width="250"/><br/>
+        <img src="images/login.png" alt="Login Screen" height="300"/><br/>
         <sub><b>Login Screen</b></sub>
       </td>
       <td align="center">
-        <img src="images/dashboard.png" alt="Dashboard" width="250"/><br/>
+        <img src="images/dashboard.png" alt="Dashboard" height="300"/><br/>
         <sub><b>Dashboard</b></sub>
       </td>
       <td align="center">
-        <img src="images/bmicalc.png" alt="BMI Calculator" width="250"/><br/>
+        <img src="images/bmicalc.png" alt="BMI Calculator" height="300"/><br/>
         <sub><b>BMI Calculator</b></sub>
       </td>
     </tr>
   </table>
 
 </div>
-
 
 **MediLock** is an Android application designed to secure medical records,to calculate BMI etc. Built with Kotlin and AndroidX, MediLock ensures a smooth, modern, and responsive user experience.
 
