@@ -33,6 +33,17 @@
 - Android SDK installed
 - Gradle 8.0 or later
 
+## 📸 Screenshots
+
+### 🔐 Login Screen
+![Login](images/login.png)
+
+### 📊 Dashboard
+![Dashboard](images/dashboard.png)
+
+### ⚖️ BMI Calculator
+![BMI Calculator](images/bmicalc.png)
+
 ### Setup Instructions
 
 ```bash
