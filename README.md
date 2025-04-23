@@ -1,4 +1,9 @@
 # MediLock
+<p align="center">
+  <img src="images/login.png" alt="Login" width="250"/>
+  <img src="images/dashboard.png" alt="Dashboard" width="250"/>
+  <img src="images/bmicalc.png" alt="BMI Calculator" width="250"/>
+</p>
 
 **MediLock** is an Android application designed to secure medical records,to calculate BMI etc. Built with Kotlin and AndroidX, MediLock ensures a smooth, modern, and responsive user experience.
 
@@ -32,19 +37,6 @@
 - Android Studio (Arctic Fox or later)
 - Android SDK installed
 - Gradle 8.0 or later
-
-## 📸 Screenshots
-
-### 🔐 Login Screen
-![Login](images/login.png)
-
-### 📊 Dashboard
-![Dashboard](images/dashboard.png)
-
-### ⚖️ BMI Calculator
-![BMI Calculator](images/bmicalc.png)
-
-### Setup Instructions
 
 ```bash
 git clone https://github.com/yourusername/medilock.git
