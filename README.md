@@ -1,7 +1,7 @@
 # MediLock
 <div align="center">
 
-  <h3>📱 Healthcare App Screenshots</h3>
+  <h3>📱 MediLock App Screenshots</h3>
 
   <table>
     <tr>
