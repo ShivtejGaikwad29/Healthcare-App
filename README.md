@@ -34,7 +34,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Kotlin**
+- **Java**
 - **Android SDK**
 - **Jetpack/AndroidX**
 - **Gradle (Kotlin DSL)**
